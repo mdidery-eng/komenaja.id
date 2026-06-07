@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KomenAja - Platform Micro-Influencer & Optimasi Engagement No. 1</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-active .faq-answer { max-height: 200px; }
+        .faq-active .faq-icon { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased">
+
+    <!-- TOP ANNOUNCEMENT BANNER -->
+    <div class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm">
+        <span class="bg-amber-500 text-slate-900 text-[10px] uppercase font-bold px-2 py-0.5 rounded mr-2 animate-pulse">Update</span>
+        Sistem Baru Terintegrasi! Pengerjaan Manual & Aman 100% Menggunakan Real User Indonesia.
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-indigo-600/30">
+                        <i class="fa-solid fa-comments text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-black text-slate-900 tracking-tight">Komen<span class="text-indigo-600">Aja</span><span class="text-amber-500">.com</span></span>
+                </div>
+                <!-- Menu -->
+                <div class="hidden md:flex space-x-8 font-semibold text-sm text-slate-600">
+                    <a href="#fitur" class="hover:text-indigo-600 transition py-2 border-b-2 border-transparent hover:border-indigo-600">Fitur Utama</a>
+                    <a href="#carakerja" class="hover:text-indigo-600 transition py-2 border-b-2 border-transparent hover:border-indigo-600">Cara Kerja</a>
+                    <a href="#layanan" class="hover:text-indigo-600 transition py-2 border-b-2 border-transparent hover:border-indigo-600">Layanan</a>
+                    <a href="#harga" class="hover:text-indigo-600 transition py-2 border-b-2 border-transparent hover:border-indigo-600">Daftar Harga</a>
+                    <a href="#faq" class="hover:text-indigo-600 transition py-2 border-b-2 border-transparent hover:border-indigo-600">FAQ</a>
+                </div>
+                <!-- Action Buttons -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="https://komenaja.com/login" class="text-sm font-bold text-slate-700 hover:text-indigo-600 px-4 py-2 transition">Masuk Akun</a>
+                    <a href="https://komenaja.com/register" class="bg-indigo-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-600/20">Mulai Bersama Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION DETAIL -->
+    <section class="relative pt-16 pb-24 overflow-hidden bg-white">
+        <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Kiri: Headline & CTA -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1.5 rounded-full mb-6">
+                        <i class="fa-solid fa-star text-amber-500"></i> Solusi Terbaik Naikin Omset & Engagement Bisnis
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight leading-none">
+                        Modal Komentar <span class="text-indigo-600 relative">DIBAYAR<span class="absolute bottom-1 left-0 w-full h-2 bg-indigo-100 -z-10"></span></span> Mulai Rp1.000
+                    </h1>
+                    <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        80% Orang mengambil keputusan untuk membeli produk atau mempercayai integritas anda berdasarkan opini publik.<br>
+                        <b>Opini publik positif akan menentukan suksesnya penjualan anda.</b>
+                        <br>
+                        <b style="color: blue;">Digital Academy</b> No #1 platform yang mempertemukan brand dan user real indonesia. Brand membuat campaign beserta intruksi, user eksekusi mengerjakan tugas (UGC).
+                    </p>
+                    
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://komenaja.com" class="bg-indigo-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-indigo-600/30 hover:bg-indigo-700 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-chart-line"></i> Mulai Sebagai Brand
+                        </a>
+                        <a href="https://komenaja.com" class="bg-white border border-gray-200 text-slate-700 font-bold px-8 py-4 rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2">
+                            Daftar Sebagai Kreator
+                        </a>
+                    </div>
+
+                    <!-- Keunggulan Singkat -->
+                    <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 text-xs text-slate-500 font-medium">
+                        <span><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Tanpa Bot</span>
+                        <span><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Real User Indonesia</span>
+                        <span><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> CS Responsif 24/7</span>
+                    </div>
+                </div>
+
+                <!-- Kanan: Preview Panel / Ilustrasi Dashboard Ringkas -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-900 rounded-3xl p-6 shadow-2xl border border-slate-800 text-white relative">
+                        <div class="absolute -top-4 -right-4 bg-amber-500 text-slate-950 font-bold text-xs px-3 py-1 rounded-lg shadow-md transform rotate-12">
+                            Sistem Instan
+                        </div>
+                        <!-- Mockup Topbar -->
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            </div>
+                            <span class="text-xs text-slate-500 font-mono">komenaja_panel_v2.php</span>
+                        </div>
+                        <!-- Mockup Content -->
+                        <div class="space-y-3">
+                            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-800">
+                                <span class="text-[10px] text-indigo-400 block font-bold uppercase tracking-wider">Target Postingan</span>
+                                <p class="text-xs font-mono text-slate-300 truncate mt-1">https://www.tiktok.com/* * * * *</p>
+                            </div>
+                            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-800">
+                                <span class="text-[10px] text-amber-400 block font-bold uppercase tracking-wider">Kategori Layanan</span>
+                                <p class="text-sm font-semibold text-white mt-1">Komentar Kustom - Akun Real Indonesia 🇮🇩</p>
+                            </div>
+                            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-800">
+                                <span class="text-[10px] text-emerald-400 block font-bold uppercase tracking-wider">Status Pemrosesan</span>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span>
+                                    <p class="text-xs font-bold text-emerald-400">Sedang Mengirim Komentar Organik...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE STATISTIK BERJALAN -->
+    <section class="bg-slate-900 text-white py-10 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-2xl sm:text-4xl font-black text-indigo-400">12,405+</div>
+                    <div class="text-xs uppercase font-bold tracking-wider text-slate-400 mt-1">Total Pengguna Aktif</div>
+                </div>
+                <div>
+                    <div class="text-2xl sm:text-4xl font-black text-amber-400">1.8 Juta+</div>
+                    <div class="text-xs uppercase font-bold tracking-wider text-slate-400 mt-1">Komentar Didistribusikan</div>
+                </div>
+                <div>
+                    <div class="text-2xl sm:text-4xl font-black text-emerald-400">45,920</div>
+                    <div class="text-xs uppercase font-bold tracking-wider text-slate-400 mt-1">Kampanye Sukses</div>
+                </div>
+                <div>
+                    <div class="text-2xl sm:text-4xl font-black text-cyan-400">&lt; 3 Menit</div>
+                    <div class="text-xs uppercase font-bold tracking-wider text-slate-400 mt-1">Rata-rata Respons Awal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA KERJA SISTEM (STEP BY STEP) -->
+    <section id="carakerja" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold uppercase text-xs tracking-widest">Sangat Mudah</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-2">4 Langkah Instan Memulai Kampanye Anda</h2>
+                <p class="text-slate-500 mt-2 text-sm">Tidak perlu keahlian teknis khusus, sistem kami dirancang user-friendly.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative text-center">
+                    <div class="w-12 h-12 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-black text-xl mx-auto -mt-12 shadow-md mb-4">1</div>
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Daftar & Login</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Buat akun gratis di website kami menggunakan email aktif Anda dalam 1 menit.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative text-center">
+                    <div class="w-12 h-12 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-black text-xl mx-auto -mt-12 shadow-md mb-4">2</div>
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Isi Saldo Deposit</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Top up saldo via Bank Transfer, E-Wallet (OVO, Dana, QRIS) otomatis instan masuk.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative text-center">
+                    <div class="w-12 h-12 bg-indigo-600 text-white rounded-xl flex items-center justify-center font-black text-xl mx-auto -mt-12 shadow-md mb-4">3</div>
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Pilih Layanan & Ketik Komen</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Masukkan tautan/link postingan, lalu tulis teks komentar kustom yang Anda inginkan.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative text-center">
+                    <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center font-black text-xl mx-auto -mt-12 shadow-md mb-4"><i class="fa-solid fa-check"></i></div>
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Pantau Hasil Real-Time</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Sistem menyebarkan tugas ke ribuan user real, pantau komentar masuk dari dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILIHAN FITUR UTAMA (SANGAT DETAIL) -->
+    <section id="fitur" class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold uppercase text-xs tracking-widest">Kelebihan Eksklusif</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-2">Sistem Kolaborasi antara real pengguna sosial media dan brand</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Fitur 1 -->
+                <div class="p-6 bg-gray-50/50 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-language"></i></div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">Bahasa & Relevansi Natural</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Isi ulasan/komentar menggunakan kosakata slang, baku, atau gaya milenial Indonesia asli yang selaras dengan topik postingan jualan/konten Anda.</p>
+                </div>
+                <!-- Fitur 2 -->
+                <div class="p-6 bg-gray-50/50 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-user-secret"></i></div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">Privasi Super Ketat & Aman</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Tidak ada yang akan tahu Anda menggunakan jasa kami. Kami tidak pernah mempublikasikan tautan atau username klien kami di manapun.</p>
+                </div>
+                <!-- Fitur 3 -->
+                <div class="p-6 bg-gray-50/50 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-sliders"></i></div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">Kendali Kecepatan Pengiriman</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Ingin komentar masuk secara bertahap (Drip-feed) agar terlihat alami di hadapan algoritma? Anda bisa mengaturnya dengan mudah lewat kontrol panel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAFTAR HARGA & PAKET (TABEL DETAIL) -->
+    <section id="harga" class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-indigo-600 font-bold uppercase text-xs tracking-widest">Pilihan Investasi Terbaik</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-2">Daftar Paket Harga KomenAja</h2>
+                <p class="text-slate-500 mt-2 text-sm">Sesuaikan dengan budget campaign personal atau brand korporat Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl border border-gray-200 p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                    <div>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Starter Pack</span>
+                        <h3 class="text-xl font-black text-slate-900">Komentar/Rating</h3>
+                        <div class="my-6">
+                            <span class="text-3xl font-black text-slate-900">Rp xx.xxx</span>
+                        </div>
+                        <div class="space-y-3.5 text-sm text-slate-600 border-t border-gray-100 pt-6">
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> <strong>Real User</strong> Komentar Asli</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Real User Campuran (Pria/Wanita)</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Approve Komentar Manual</p>
+                            <p class="flex items-center gap-2.5 text-gray-300"><i class="fa-solid fa-circle-xmark"></i> Tidak Mendukung Komentar Sara</p>
+                        </div>
+                    </div>
+                    <button class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3.5 rounded-xl text-sm transition mt-8"><a href="https://komenaja.com">Daftar Sebagai Brand</a></button>
+                </div>
+
+                <!-- Card 2 (Highlight Populer) -->
+                <div class="bg-white rounded-3xl border-2 border-indigo-600 p-8 flex flex-col justify-between shadow-xl shadow-indigo-600/5 relative">
+                    <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-indigo-600 text-white font-bold text-xs uppercase px-4 py-1 rounded-full tracking-widest">Paling Populer</div>
+                    <div>
+                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest block mb-1">Business Scale</span>
+                        <h3 class="text-xl font-black text-slate-900">Clipper Campaign</h3>
+                        <div class="my-6">
+                            <span class="text-3xl font-black text-slate-900">Rp xxx.xxx</span>
+                        </div>
+                        <div class="space-y-3.5 text-sm text-slate-600 border-t border-gray-100 pt-6">
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> <strong>Unlimited Clipper</strong> Selama Saldo Tersedia</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Bisa Pilih Target Gender (L/P)</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Bebas berikan instruksi kepara clipper</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Dukungan Kecepatan Bertahap</p>
+                        </div>
+                    </div>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 rounded-xl text-sm transition mt-8 shadow-lg shadow-indigo-600/20"><a href="https://komenaja.com">Daftar Sebagai Brand</a></button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl border border-gray-200 p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+                    <div>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Corporate Level</span>
+                        <h3 class="text-xl font-black text-slate-900">Agency Premium</h3>
+                        <div class="my-6">
+                            <span class="text-3xl font-black text-slate-900">Rp x.xxx.xxx</span>
+                        </div>
+                        <div class="space-y-3.5 text-sm text-slate-600 border-t border-gray-100 pt-6">
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> <strong>Unlimited Clipper</strong> Selama Saldo Tersedia</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Akun Clipper dengan integritas Tinggi</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Bebas berikan instruksi kepara clipper</p>
+                            <p class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-indigo-600"></i> Prioritas Antrean Server Utama</p>
+                        </div>
+                    </div>
+                    <button class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3.5 rounded-xl text-sm transition mt-8"><a href="https://komenaja.com">Daftar Sebagai Brand</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION INTERAKTIF (MIRIP WEBSITE ASLI) -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-indigo-600 font-bold uppercase text-xs tracking-widest">Bantuan & FAQ</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-2">Masih Memiliki Pertanyaan?</h2>
+            </div>
+
+            <!-- Accordion Wrapper -->
+            <div class="space-y-4">
+                <!-- Item 1 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50/50 transition">
+                    <button class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Apakah sistem ini menggunakan bot otomatis?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 faq-icon transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="p-5 border-t border-gray-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Sama sekali tidak. KomenAja bekerja layaknya platform crowdsourcing atau micro-tasking. Pesanan komentar Anda dikirim ke jejaring puluhan ribu anggota atau *real user* kami di seluruh Indonesia yang kemudian melakukan pengerjaan secara manual menggunakan ponsel mereka.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50/50 transition">
+                    <button class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Apakah ada jaminan akun saya aman dari blokir/banned?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 faq-icon transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="p-5 border-t border-gray-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Dijamin 100% aman. Mengapa? Karena kami tidak pernah meminta *username*, kata sandi, ataupun API token akun privat Anda. Yang kami butuhkan hanyalah link publik dari postingan konten Anda yang ingin ditingkatkan performanya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item border border-gray-200 rounded-xl bg-gray-50/50 transition">
+                    <button class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Metode pembayaran apa saja yang didukung?</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 faq-icon transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="p-5 border-t border-gray-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Kami menyediakan sistem gerbang pembayaran otomatis terlengkap. Anda bisa mengisi saldo akun menggunakan transfer Bank Utama (BCA, Mandiri, BNI, BRI), scan satu kode QRIS untuk seluruh E-Wallet (GoPay, DANA, LinkAja, ShopeePay, OVO).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER PREMIUM -->
+    <footer class="bg-slate-950 text-slate-400 pt-16 pb-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Branding -->
+                <div>
+                    <span class="text-2xl font-black text-white tracking-tight">Komen<span class="text-indigo-500">Aja</span></span>
+                    <p class="text-xs text-slate-500 mt-4 leading-relaxed">
+                        Platform penyedia layanan mikro-tasking dan optimasi interaksi sosial media terbesar, terpercaya, dan aman di Indonesia.
+                    </p>
+                </div>
+                <!-- Links 1 -->
+                <div>
+                    <h5 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Navigasi</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#fitur" class="hover:text-white transition">Fitur Unggulan</a></li>
+                        <li><a href="#carakerja" class="hover:text-white transition">Cara Kerja Platform</a></li>
+                        <li><a href="#harga" class="hover:text-white transition">Paket Harga</a></li>
+                    </ul>
+                </div>
+                <!-- Links 2 -->
+                <div>
+                    <h5 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Legalitas</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="/legal.html" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Refund Guarantee</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h5 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Hubungi Kami</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-2">Punya pertanyaan kerja sama korporasi atau kendala transaksi?</p>
+                    <a href="https://komenaja.com/" class="text-xs text-emerald-400 font-bold hover:underline inline-flex items-center gap-1">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Support CS
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="border-t border-slate-900 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-600 gap-4">
+                <p>&copy; 2026 KomenAja.com. Hak Cipta Dilindungi Undang-Undang.</p>
+                <div class="flex gap-4">
+                    <i class="fa-brands fa-cc-visa text-lg"></i>
+                    <i class="fa-brands fa-cc-mastercard text-lg"></i>
+                    <span class="font-mono text-[10px] border border-slate-800 px-1.5 py-0.5 rounded text-slate-500">Secured SSL Connection</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR ACCORDION INTERACTIVITY -->
+    <script>
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            
+            // Tutup item lain jika sedang terbuka (Opsional/Biar Rapi)
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('faq-active');
+                }
+            });
+
+            // Toggle item yang diklik
+            faqItem.classList.toggle('faq-active');
+        }
+    </script>
+</body>
+</html>

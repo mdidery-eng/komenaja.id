@@ -1,0 +1,12 @@
+# robots.txt untuk https://komenaja.id
+User-agent: *
+Allow: /
+
+# Disallow admin and private directories (contoh standar untuk keamanan)
+Disallow: /wp-admin/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /api/private/
+
+# Sitemap location
+Sitemap: https://komenaja.id/sitemap.xml

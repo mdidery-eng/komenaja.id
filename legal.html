@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Layanan & Privasi - KomenAja.com</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --primary-light: #eff6ff;
+            --accent-color: #3b82f6;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --danger: #ef4444;
+            --danger-light: #fef2f2;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* SIDEBAR (NAVIGASI) */
+        .sidebar {
+            width: 280px;
+            background-color: var(--bg-card);
+            border-right: 1px solid var(--border-color);
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .logo-area {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-area span {
+            color: var(--accent-color);
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .nav-item a {
+            display: block;
+            padding: 12px 16px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-item a:hover {
+            background-color: var(--primary-light);
+            color: var(--accent-color);
+        }
+
+        .nav-item.active a {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* MAIN CONTENT AREA */
+        .main-content {
+            margin-left: 280px;
+            flex-grow: 1;
+            padding: 40px 60px;
+            max-width: 1100px;
+        }
+
+        /* HEADER */
+        .page-header {
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, var(--primary-color), #0f172a);
+            padding: 40px;
+            border-radius: 16px;
+            color: white;
+            box-shadow: 0 4px 20px rgba(30, 58, 138, 0.15);
+        }
+
+        .page-header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .page-header p {
+            color: #93c5fd;
+            font-size: 14px;
+        }
+
+        /* CARD DOCUMENT */
+        .policy-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            margin-bottom: 30px;
+        }
+
+        .meta-info {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--primary-color);
+            margin: 35px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 15px;
+            color: #1e293b;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        /* BADGES & CALLOUTS */
+        .badge-rule {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .warning-box {
+            background-color: var(--danger-light);
+            border-left: 4px solid var(--danger);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .warning-box h4 {
+            color: #991b1b;
+            font-size: 15px;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .info-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info-box p {
+            color: #14532d;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        /* CONTACT SECTION */
+        .footer-contact {
+            background-color: #f1f5f9;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .footer-contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE DESAIN */
+        @media (max-width: 992px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 20px;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside class="sidebar">
+        <div class="logo-area">
+            Komen<span>Aja</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item active"><a href="#tos">Syarat & Ketentuan</a></li>
+            <li class="nav-item"><a href="#privacy">Kebijakan Privasi</a></li>
+            <li class="nav-item"><a href="#contact">Hubungi Kami</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <header class="page-header">
+            <h1>Pusat Legalitas & Transparansi</h1>
+            <p>Aturan resmi penggunaan platform, pengerjaan campaign, perlindungan hak pengguna, dan privasi data.</p>
+        </header>
+
+        <!-- KARTU SYARAT & KETENTUAN -->
+        <section id="tos" class="policy-card">
+            <div class="meta-info">Pembaruan Terakhir: 3 Juni 2026[cite: 1]</div>
+            
+            <h2>1. Syarat & Ketentuan Penggunaan (Terms of Service)[cite: 1]</h2>
+            <p>Selamat datang di <strong>www.KomenAja.com</strong>[cite: 1]. Dengan mengakses, membuat akun, atau berpartisipasi di ekosistem platform kami, Anda dinyatakan setuju secara hukum untuk tunduk dan terikat pada semua aturan operasional di bawah ini[cite: 1]. Jika ada salah satu poin yang tidak Anda sepakati, Anda dilarang menggunakan layanan kami[cite: 1].</p>
+
+            <h3>A. Kelayakan & Aturan Pendaftaran Akun[cite: 1]</h3>
+            <ul>
+                <li><span class="badge-rule">Batas Usia:</span> Anda wajib berusia minimal <strong>13 tahun</strong> untuk mendaftar dan mengikuti seluruh aktivitas di platform ini[cite: 1].</li>
+                <li><span class="badge-rule">Satu Pengguna Satu Akun:</span> Setiap individu fisik atau manusia nyata hanya diperbolehkan mendaftarkan, mengelola, dan menggunakan <strong>1 (satu) akun unik</strong>[cite: 1].</li>
+                <li><span class="badge-rule">Identitas Valid:</span> Seluruh data pendaftaran harus diisi dengan informasi yang jujur, valid, dan akurat[cite: 1]. Penggunaan akun palsu atau peminjaman identitas orang lain tidak diperkenankan[cite: 1].</li>
+            </ul>
+
+            <div class="warning-box">
+                <h4>⚠️ Sanksi Tegas Multi-Akun</h4>
+                <p>Jika algoritma atau tim internal kami mengidentifikasi adanya aktivitas beberapa akun (multi-akun) yang dikendalikan oleh satu orang yang sama, KomenAja.com akan membekukan seluruh jaringan akun tersebut secara permanen tanpa kompensasi apa pun[cite: 1].</p>
+            </div>
+
+            <h3>B. Etika & Sistem Pengerjaan Campaign[cite: 1]</h3>
+            <p>KomenAja.com mengutamakan integritas konten dalam setiap layanan jasa ulasan digital[cite: 1]. Ketentuan mutlak pengerjaan misi adalah sebagai berikut:</p>
+            <ul>
+                <li><strong>Larangan Keras Bot & Otomatisasi:</strong> Anda dilarang memanipulasi atau menyelesaikan pesanan <em>campaign</em> menggunakan <strong>bot</strong>, skrip otomatisasi, perangkat lunak makro, emulator, atau rekayasa kecerdasan buatan (AI) eksternal[cite: 1]. Semua pengerjaan wajib dilakukan secara manual oleh manusia[cite: 1].</li>
+                <li><strong>Konten Bermartabat:</strong> Komentar atau teks ulasan yang Anda buat dilarang mengandung SARA, hoaks, ujaran kebencian, pencemaran nama baik, pelecehan, maupun konten porno[cite: 1].</li>
+            </ul>
+
+            <h3>C. Kebijakan Transaksi & Pembatalan Campaign (Bagi Advertiser)[cite: 1]</h3>
+            <p>Untuk menjaga kepastian penghasilan para kreator/eksekutor, syarat komersial bagi Pengiklan diatur secara mengikat:</p>
+            <ul>
+                <li><strong>Campaign Bersifat Final:</strong> Setiap proyek/<em>campaign</em> yang telah diajukan dan disetujui (<em>approved</em>) oleh sistem moderasi KomenAja.com **tidak dapat dibatalkan atau ditarik kembali**[cite: 1].</li>
+                <li><strong>Kebijakan Non-Refundable:</strong> Semua transaksi deposit dana atau pembiayaan iklan yang sudah berjalan tidak dapat dikembalikan atau diuangkan kembali (<strong>tidak ada pengembalian dana / no-refund</strong>) dengan alasan apa pun[cite: 1].</li>
+            </ul>
+        </section>
+
+        <!-- KARTU KEBIJAKAN PRIVASI -->
+        <section id="privacy" class="policy-card">
+            <h2>2. Kebijakan Privasi (Privacy Policy)[cite: 1]</h2>
+            <p>Lembar ini menjelaskan komitmen KomenAja.com dalam melindungi kerahasiaan informasi data pribadi yang Anda percayakan kepada platform kami[cite: 1].</p>
+
+            <h3>A. Data yang Dikumpulkan[cite: 1]</h3>
+            <ul>
+                <li><strong>Informasi Profil:</strong> Email, username, dan kata sandi yang terenkripsi aman saat registrasi[cite: 1].</li>
+                <li><strong>Data Teknis:</strong> Alamat IP, jenis penjelajah (browser), dan log stempel waktu aktivitas[cite: 1].</li>
+                <li><strong>Kuki (Cookies):</strong> Mengoptimalkan kenyamanan navigasi dan merekam preferensi penjelajahan Anda[cite: 1].</li>
+            </ul>
+
+            <h3>B. Transparansi Pihak Ketiga[cite: 1]</h3>
+            <p>KomenAja.com <strong>tidak akan menjual, menyewakan, atau memperdagangkan</strong> data pribadi Anda kepada korporasi komersial mana pun[cite: 1]. Pembukaan data hanya dilakukan demi kepatuhan hukum apabila diperintahkan oleh otoritas penegak hukum resmi di bawah yurisdiksi Republik Indonesia[cite: 1].</p>
+        </section>
+
+        <!-- KARTU KONTAK -->
+        <section id="contact" class="footer-contact">
+            <h3>3. Pusat Bantuan Layanan[cite: 1]</h3>
+            <p>Mengalami kendala teknis atau ingin melaporkan kecurangan akun bot? Segera hubungi tim aduan resmi kami:</p>
+            <p style="margin-top: 10px;">
+                📧 Email: <strong>support@komenaja.com</strong><br>
+                🌐 Tiket Bantuan: <a href="https://www.KomenAja.com/contact" target="_blank">www.KomenAja.com/contact</a>[cite: 1]
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>
